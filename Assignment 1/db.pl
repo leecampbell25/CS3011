@@ -18,3 +18,6 @@ incrR(X, Y) :- legal(X), incr(X, Y).
 
 add(f0(null), Y, Y).
 add(X, Y, Z) :- incr(A, X), add(A, Y, B), incr(B, Z).
+
+mult(f1(null), Y, Y).
+mult(X, Y, Z) :- incr(A, X), mul(A, Y, B), add(B, Z).
