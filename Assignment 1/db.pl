@@ -1,3 +1,6 @@
+% Lee Campbell | campbel2@tcd.ie | 15/10/18 %
+
+
 pterm(null).
 pterm(f0(X)) :- pterm(X).
 pterm(f1(X)) :- pterm(X).
